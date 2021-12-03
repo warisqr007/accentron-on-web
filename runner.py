@@ -23,14 +23,14 @@ if __name__ == "__main__":
     # con = MysqlConnection(host, db, username, password)
 
     # fetch mongo config (TODO: remove this block or uncomment)
-    mongo_url, mongo_db = get_mongodb_config()
+    # mongo_url, mongo_db = get_mongodb_config()
 
     # initialise stores # TODO: add stores here and remove examples
-    stores = {
-        # "mysql_example": ExampleMysqlStore(connection=con, table_name="example"),
-        "mongo_example": ExampleMongoStore(mongo_url=mongo_url, mongo_db=mongo_db, collection_name="examples"),
-    }
-
+    # stores = {
+    #     # "mysql_example": ExampleMysqlStore(connection=con, table_name="example"),
+    #     "mongo_example": ExampleMongoStore(mongo_url=mongo_url, mongo_db=mongo_db, collection_name="examples"),
+    # }
+    stores={}
     # create flask app
     app = Flask(__name__)
     # register endpoints
